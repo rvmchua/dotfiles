@@ -16,19 +16,19 @@ interval=30
 
 # Disk space blocks
 [disk_root]
-command=echo " Root: $(df -h / | awk 'NR==2 {print $4}')"
+command=echo "Root: $(df -h / | awk 'NR==2 {print $4}')"
 interval=60
 
 [disk_home]
-command=echo " Home: $(df -h /home | awk 'NR==2 {print $4}')"
+command=echo "Home: $(df -h /home | awk 'NR==2 {print $4}')"
 interval=60
 
 [disk_other]
-command=echo " OtherFiles: $(df -h /home/royce/OtherFiles | awk 'NR==2 {print $4}')"
+command=echo "OtherFiles: $(df -h /home/royce/OtherFiles | awk 'NR==2 {print $4}')"
 interval=60
 
 [disk_vault]
-command=echo " Vault: $(df -h /mnt/Vault | awk 'NR==2 {print $4}')"
+command=echo "Vault: $(df -h /mnt/Vault | awk 'NR==2 {print $4}')"
 interval=60
 
 [wifi_ssid]
