@@ -2,6 +2,6 @@ alias python='python3'
 alias vim='nvim'
 alias xampp='sudo /opt/lampp/lampp'
 alias jlox='~/Documents/github/craftinginterpreters/jlox'
-alias warmane='nohup wine /media/royce/Other\ Files/Downloads/World\ of\ Warcraft\ 3.3.5a/Wow.exe &'
+alias warmane='nohup wine /home/royce/OtherFiles/Downloads/World\ of\ Warcraft\ 3.3.5a/Wow.exe &'
 alias eve-ng="~/start-eve.sh"
 alias artix="~/Downloads/Artix/Artix_Games_Launcher-x86_64.AppImage"
