@@ -1,0 +1,47 @@
+# i3blocks configuration file
+# The interval in which i3blocks refreshes
+interval=1
+
+[mpc_music]
+command=~/.config/i3blocks/mpc_status.sh
+interval=1
+
+# The CPU usage block
+[cpu]
+command=echo "CPU: $(grep 'cpu ' /proc/stat | awk '{print ($2+$4)*100/($2+$4+$5)}' | cut -d'.' -f1)%"
+interval=1
+
+# Memory block
+[memory]
+command=echo "Mem: $(free -h | awk '/^Mem:/ {print $3}' | cut -d'i' -f1)B"
+interval=30
+
+# The available disk space block
+[disk]
+command=echo "Disk: $(df -h / | awk 'NR==2 {print $4}')"
+interval=60
+
+# Wifi connection
+[wifi]
+command=~/.config/i3blocks/wifi_ssid.sh
+label=
+interval=1
+
+[wifi_download_speed]
+command=~/.config/i3blocks/wifi_speed.sh
+interval=1
+
+# The volume block
+[volume]
+command=~/.config/i3blocks/volume_status.sh
+interval=1
+signal=10
+
+# The date and time block
+[date]
+command=echo " $(date '+%m-%-d-%Y')"
+interval=60
+
+[time]
+command=echo " $(date '+%I:%M:%S %p')"
+interval=1
