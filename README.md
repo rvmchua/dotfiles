@@ -6,7 +6,8 @@ Personal configuration files for my Linux (Debian) workstation.
 
 | File | Description |
 |------|-------------|
-| `.zshrc` | Zsh config — Oh My Zsh (agnoster theme), PATH, nvm, bun, Go, PHP (Herd Lite), aliases |
+| `.zshrc` | Zsh config — Oh My Zsh (agnoster theme), PATH, nvm, bun, Go, PHP (Herd Lite) |
+| `.zsh_aliases` | Shell aliases |
 
 ## Setup
 
@@ -14,6 +15,7 @@ Symlink files to your home directory:
 
 ```sh
 ln -sf "$(pwd)/.zshrc" ~/.zshrc
+ln -sf "$(pwd)/.zsh_aliases" ~/.zsh_aliases
 ```
 
 ## Dependencies
