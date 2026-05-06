@@ -30,10 +30,4 @@ export PHP_INI_SCAN_DIR="/home/royce/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 export XDG_DATA_DIRS="$HOME/.local/share:/usr/local/share:/usr/share"
 
 # Aliases
-alias python='python3'
-alias vim='nvim'
-alias xampp='sudo /opt/lampp/lampp'
-alias jlox='~/Documents/github/craftinginterpreters/jlox'
-alias warmane='nohup wine /media/royce/Other\ Files/Downloads/World\ of\ Warcraft\ 3.3.5a/Wow.exe &'
-alias eve-ng="~/start-eve.sh"
-alias artix="~/Downloads/Artix/Artix_Games_Launcher-x86_64.AppImage"
+[ -f "$HOME/.zsh_aliases" ] && source "$HOME/.zsh_aliases"
