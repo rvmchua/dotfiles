@@ -46,9 +46,9 @@ interval=1
 signal=10
 
 [date]
-command=echo " $(date '+%m-%-d-%Y')"
+command=echo "$(date '+%m-%-d-%Y')"
 interval=60
 
 [time]
-command=echo " $(date '+%I:%M:%S %p')"
+command=echo "$(date '+%I:%M:%S %p')"
 interval=1
